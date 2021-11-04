@@ -1,0 +1,6 @@
+5
+42/home/jasper/git-repos/js-fetch/index.html1635968685609511516 0
+36/home/jasper/git-repos/js-fetch/dist1635968605160172935 1
+41/home/jasper/git-repos/js-fetch/README.md1635967120175858431 0
+47/home/jasper/git-repos/js-fetch/dist/index.html1635968605160172935 0
+31/home/jasper/git-repos/js-fetch1635967282006929529 1

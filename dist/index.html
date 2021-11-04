@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>fetch("https://api.do.smartkx.io/v1/households", {
+    "headers": {
+        "authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE1MjU1NWEyMjM3MWYxMGY0ZTIyZjFhY2U3NjJmYzUwZmYzYmVlMGMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc21hcnQta3giLCJhdWQiOiJzbWFydC1reCIsImF1dGhfdGltZSI6MTYzNTk2ODEwNSwidXNlcl9pZCI6ImVzUVgxYVdrTjlkdVhReHZvMnhQcWJRM2hxaTEiLCJzdWIiOiJlc1FYMWFXa045ZHVYUXh2bzJ4UHFiUTNocWkxIiwiaWF0IjoxNjM1OTY4MTA1LCJleHAiOjE2MzU5NzE3MDUsImVtYWlsIjoianR1bmdnc3BAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsianR1bmdnc3BAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.bBtrtvND5_pi8Y23C_I-qleZVGfNz0ycSFB3RZZNOynxcKF5gcXam_r6X5aGZxOtpVNLn98w_LkM4LDloaHUq7TaZKkZvr8oEN1RzzHzif1S_yRLCKWhK3l8J_chI8zThfNHkoGaRqj76yDuPBtunUO14RGEslOJOtD4KRL9oUbng-FP4sA-mEZqCuR-DbXog4UeYUg8-w6sWTHShqugF0IgQHegiJPK5BqIHbD0BSP7bqGbvOsCqwbXhVq9ISVCh5gdXa0LpsGdNnnxiY1WGtx17fwbNfMVTlHxHxGBnP-bThCRZdpxj39HifjGMRbhI5syWOLSvwhy5BDjIXzEoQ"
+    },
+    "body": null,
+    "method": "GET",
+    "credentials": "include"
+}).then((response)=>response.json()
+).then((data)=>console.log(data)
+);
+
+</script>
+</body>
+
+</html>

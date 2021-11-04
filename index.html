@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        fetch("http://example.com/movies.json")
+            .then(response => response.json())
+            .then(data => console.log(data))
+
+        async function postData(url = "", data = {}) {
+            const response = await fetch(url, {
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                    // set CORS
+                    'Content-Type': 'application/json'
+                },
+                redirect: 'follow',
+                referrerPolicy: 'no-referrer',
+                body: JSON.stringify(data)
+            })
+            return response.json()
+        }
+
+        postData("http://example.com/movies.json", { answer: 42 })
+            .then(data => {
+                console.log(data)
+            })
+
+        const data = { username: 'test' }
+        fetch('https://example.com/profile', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data)
+        })
+        .catch((error) => {
+            console.error('Error:', error)
+        })
+    </script>
+</body>
+
+</html>
